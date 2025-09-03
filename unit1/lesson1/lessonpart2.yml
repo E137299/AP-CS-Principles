@@ -37,41 +37,10 @@ content: >+
   * For input `"hello world"`, the output should be `"world hello"`.
 
 
-  ### Sample Code
+  ###
 
 
-  ```python
-
-  # Sample input
-
-  input_string = "hello world"
-
-
-  # Splitting the input string into two words
-
-  word1, word2 = input_string.split()
-
-
-  # Swapping the words and printing the result
-
-  output_string = f"{word2} {word1}"
-
-  print(output_string)
-
-  ```
-
-
-  ### Explanation
-
-
-  * The `split()` method is used to divide the input string into two words.
-
-
-  * The words are then swapped using formatted string literals (f-strings) to
-  create the output string.
-
-
-  * Finally, the result is printed, showing the words in reversed order.
+  #
 
 showEditor: true
 editors:
