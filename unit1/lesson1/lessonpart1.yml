@@ -1,0 +1,200 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: Strings
+content: >
+  ## Python Strings
+
+
+  In Python, strings are sequences of characters enclosed in quotes. You can use
+  single (`'`), double (`"`), or triple quotes (`'''` or `"""`) for strings.
+  Strings are immutable, meaning once created, they cannot be changed.
+
+
+  ### Slicing Strings
+
+
+  Slicing allows you to extract parts of a string. Use the syntax
+  `string[start:end]` to slice a string from the `start` index up to, but not
+  including, the `end` index.
+
+
+  ```python
+
+  text = "Hello, World!"
+
+  print(text[0:5])  # Output: Hello
+
+  print(text[7:])   # Output: World!
+
+  print(text[:5])   # Output: Hello
+
+  ```
+
+
+  ### Modifying Strings
+
+
+  While strings are immutable, you can create new strings based on
+  modifications:
+
+
+  ```python
+
+  text = "Hello, World!"
+
+  new_text = text.replace("World", "Python")
+
+  print(new_text)  # Output: Hello, Python!
+
+  ```
+
+
+  ### Concatenating Strings
+
+
+  Concatenation is the process of joining two or more strings. Use the `+`
+  operator to concatenate strings.
+
+
+  ```python
+
+  greeting = "Hello"
+
+  name = "Alice"
+
+  message = greeting + ", " + name + "!"
+
+  print(message)  # Output: Hello, Alice!
+
+  ```
+
+
+  ### Format Strings
+
+
+  Python provides several ways to format strings. The `format()` method and
+  f-strings (formatted string literals) are commonly used.
+
+
+  ```python
+
+  # Using format()
+
+  age = 21
+
+  text = "I am {} years old.".format(age)
+
+  print(text)  # Output: I am 21 years old.
+
+
+  # Using f-strings
+
+  name = "Alice"
+
+  text = f"My name is {name}."
+
+  print(text)  # Output: My name is Alice.
+
+  ```
+
+
+  ### String Methods
+
+
+  Python offers a variety of built-in string methods for different operations:
+
+
+  - `lower()`: Converts all characters to lowercase.
+
+  - `upper()`: Converts all characters to uppercase.
+
+  - `strip()`: Removes whitespace from the beginning and end.
+
+  - `find()`: Searches for a substring and returns the index of its first
+  occurrence.
+
+  - `split()`: Splits the string into a list based on a delimiter.
+
+
+  ```python
+
+  text = "  Hello, World!  "
+
+  print(text.lower())  # Output: hello, world!
+
+  print(text.strip())  # Output: Hello, World!
+
+  print(text.find("World"))  # Output: 8
+
+  print(text.split(","))  # Output: ['  Hello', ' World!  ']
+
+  ```
+
+
+  Experiment with these string operations to become more comfortable with
+  manipulating text in Python!
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: "What will be the output of the following Python code: `text = 'Hello,
+          World!'; print(text[7:])`?"
+        options:
+          - id: "1"
+            value: World!
+            explanation: The slice `text[7:]` extracts the substring from index 7 to the end
+              of the string.
+            isCorrect: true
+          - id: "2"
+            value: Hello
+            explanation: The slice `text[7:]` does not include the beginning of the string.
+          - id: "3"
+            value: Hello, World!
+            explanation: The slice `text[7:]` starts from index 7, not from the beginning.
+          - id: "4"
+            value: World
+            explanation: The slice `text[7:]` includes the exclamation mark at the end.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which operator is used to concatenate strings in Python?
+        options:
+          - id: "1"
+            value: +
+            explanation: The + operator is used to concatenate strings in Python.
+            isCorrect: true
+          - id: "2"
+            value: "*"
+            explanation: The * operator is used to repeat strings, not concatenate them.
+          - id: "3"
+            value: "&"
+            explanation: The & operator is not used for string concatenation in Python.
+          - id: "4"
+            value: "%"
+            explanation: The % operator is used for string formatting, not concatenation.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which string method would you use to convert all characters in a string
+          to uppercase in Python?
+        options:
+          - id: "1"
+            value: upper()
+            explanation: The upper() method converts all characters in a string to
+              uppercase.
+            isCorrect: true
+          - id: "2"
+            value: lower()
+            explanation: The lower() method converts all characters in a string to
+              lowercase.
+          - id: "3"
+            value: strip()
+            explanation: The strip() method removes whitespace from the beginning and end of
+              a string.
+          - id: "4"
+            value: find()
+            explanation: The find() method searches for a substring and returns the index of
+              its first occurrence.

@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart2
+title: Swapping Two Words
+content: >+
+  ## Practice Coding Challenge: Swapping Two Words
+
+
+  ### Instructions
+
+
+  **Input Collection**
+
+
+  * The program will receive a single string containing exactly two words
+  separated by a single space.
+
+
+  **String Manipulation**
+
+
+  * Swap the positions of the two words.
+
+
+  * Do not use any if-else statements or loops in your script.
+
+
+  **Output**
+
+
+  * Print the new string with the second word appearing first, followed by the
+  first word.
+
+
+  **Example**
+
+
+  * For input `"hello world"`, the output should be `"world hello"`.
+
+
+  ### Sample Code
+
+
+  ```python
+
+  # Sample input
+
+  input_string = "hello world"
+
+
+  # Splitting the input string into two words
+
+  word1, word2 = input_string.split()
+
+
+  # Swapping the words and printing the result
+
+  output_string = f"{word2} {word1}"
+
+  print(output_string)
+
+  ```
+
+
+  ### Explanation
+
+
+  * The `split()` method is used to divide the input string into two words.
+
+
+  * The words are then swapped using formatted string literals (f-strings) to
+  create the output string.
+
+
+  * Finally, the result is printed, showing the words in reversed order.
+
+showEditor: true
+editors:
+  - course1/unit1/lesson1/lessonpart2/SwappingTwoWords.py
